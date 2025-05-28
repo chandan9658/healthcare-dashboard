@@ -2,7 +2,7 @@ import React from 'react';
 import { Search, ChevronRight } from 'lucide-react';
 import { healthStatusData } from '../../data/healthData';
 import HealthStatusCard from './HealthStatusCard';
-
+import humanBody from '../../assets/images/humanBody.png';
 const AnatomySection = () => {
   return (
     <div className=" p-6 rounded-2xl">
@@ -16,7 +16,7 @@ const AnatomySection = () => {
         <div className="relative flex">
           <div className="w-1/2 relative min-h-[400px] flex items-center justify-center">
             <img 
-              src="src/assets/images/humanBody.png" 
+              src={humanBody}
               alt="Human anatomy" 
               className="h-[400px] object-contain"
             />
