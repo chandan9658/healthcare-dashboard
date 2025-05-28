@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-neutral-800 bg-neutral-50;
+  }
+}
+
+@layer components {
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-neutral-500 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200;
+  }
+
+  .nav-item.active {
+    @apply bg-primary-50 text-primary-600;
+  }
+
+  .health-status-indicator {
+    @apply absolute flex items-center justify-center text-white rounded-full shadow-md text-sm font-medium px-3 py-1;
+  }
+
+  .health-status-indicator.healthy {
+    @apply bg-success-500;
+  }
+
+  .health-status-indicator.warning {
+    @apply bg-warning-500;
+  }
+
+  .health-status-indicator.danger {
+    @apply bg-danger-500;
+  }
+
+  .health-status-card {
+    @apply flex items-center justify-between p-4 bg-white rounded-card shadow-card mb-4;
+  }
+
+  .calendar-cell {
+    @apply flex flex-col items-center py-2 px-1 text-center;
+  }
+
+  .calendar-date {
+    @apply text-lg font-medium mb-1;
+  }
+
+  .calendar-time {
+    @apply text-xs rounded-full px-2 py-1 bg-primary-100 text-primary-700 my-0.5;
+  }
+
+  .appointment-card {
+    @apply bg-secondary-50 p-4 rounded-card shadow-card mb-4 flex justify-between items-center;
+  }
+
+  .activity-bar {
+    @apply w-4 rounded-full mx-0.5;
+  }
+}

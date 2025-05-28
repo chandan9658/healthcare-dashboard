@@ -1,0 +1,43 @@
+export const healthStatusData = [
+  {
+    id: 'heart',
+    name: 'Healthy Heart',
+    status: 'healthy',
+    position: { top: '35%', left: '40%' },
+    icon: '❤️',
+  },
+  {
+    id: 'lungs',
+    name: 'Lungs',
+    status: 'danger',
+    date: '20 Oct 2021',
+    position: { top: '25%', right: '25%' },
+    icon: '🫁',
+    progress: 30,
+  },
+  {
+    id: 'teeth',
+    name: 'Teeth',
+    status: 'warning',
+    date: '26 Oct 2021',
+    position: { top: '60%', left: '30%' },
+    icon: '🦷',
+    progress: 70,
+  },
+  {
+    id: 'leg',
+    name: 'Healthy Leg',
+    status: 'healthy',
+    position: { top: '75%', left: '30%' },
+    icon: '🦵',
+  },
+  {
+    id: 'bone',
+    name: 'Bone',
+    status: 'warning',
+    date: '26 Oct 2021',
+    position: { top: '60%', right: '25%' },
+    icon: '🦴',
+    progress: 50,
+  },
+];
